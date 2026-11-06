@@ -16,3 +16,10 @@
 
     sudo pacman -S asusctl
     systemctl enable --now asusd
+
+# EXPORT PATH
+
+    mkdir -p ~/.local/bin
+    cp kbcolor ~/.local/bin/
+    chmod +x ~/.local/bin/kbcolor 
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
