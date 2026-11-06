@@ -10,3 +10,9 @@
 # USAGE
 
     kbcolor <hex color code>
+
+
+# INSTALLATION (ARCH)
+
+    sudo pacman -S asusctl
+    systemctl enable --now asusd
