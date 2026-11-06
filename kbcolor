@@ -1,0 +1,10 @@
+#!/bin/bash
+
+INPUT="${1:-ffffff}"
+
+
+if command -v asusctl &> /dev/null; then
+    asusctl aura effect static -c $INPUT
+else
+    echo "asusctl not installed!!"
+fi
